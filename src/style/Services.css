@@ -1,0 +1,32 @@
+.cards {
+    height: 20vh;
+}
+
+.card-header {
+    font-size: 6em;
+}
+
+.carousel-item {
+    height: 60vh;
+ }
+
+ .button-service {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    margin: 10px 5px 10px 5px;
+ }
+
+ .button-service .card-header {
+     background: none;
+    transition-duration: 0.3s;
+ }
+
+ .button-service:hover .card-header{
+    background: #eeeeee;
+    transition-duration: 0.3s;
+ }

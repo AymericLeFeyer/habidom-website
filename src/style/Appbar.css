@@ -1,13 +1,28 @@
 /* AppBar */
 .appbar {
     background-color: white;
-    height: 160px;
+    height: 20vh;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+
+.appbar-small {
+    height: 4vh;
+    transition-duration: 0.3s;
 }
 
 /* Left Side */
 .logo {
     width: 40%;
-   
+    transition-duration: 0.3s;
+}
+
+.logo-small {
+    transition-duration: 0.3s;
+    src: url("http://imgur.com/SZ8Cm.jpg");
+    
 }
 
 /* Center Side */
@@ -70,4 +85,5 @@
     transition-duration: 1s;
 
 }
+
 

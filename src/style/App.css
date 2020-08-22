@@ -7,9 +7,23 @@
 
 @font-face {
   font-family: 'Bebas';
-  src: local('MyFont'), url(../res/BebasNeue-Regular.woff) format('woff');
+  src: local('Bebas'), url(../res/fonts/bebas/BebasNeue-Regular.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(../res/fonts/roboto/roboto-condensed-v18-latin-regular.woff) format('woff');
+}
+
+
+
+
 .App-content {
-  margin-top: 200px;
+  margin-top: 19vh;
+  transition-duration: 0.3s;
+}
+
+.App-content-small {
+  margin-top: 7vh;
+  transition-duration: 0.3s;
 }
