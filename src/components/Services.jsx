@@ -20,7 +20,6 @@ function Services() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
-
     setIndex(selectedIndex);
   };
   return (
@@ -30,11 +29,9 @@ function Services() {
         <Carousel activeIndex={index} onSelect={handleSelect}>
           {/*Item 1*/}
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="http://placekitten.com/800/400"
-              alt="First slide"
-            />
+            <div className="d-block w-100 item-carousel item-1">
+              <div className="orange-filter"></div>
+            </div>
             <Carousel.Caption>
               <h3>Domotique</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -42,11 +39,9 @@ function Services() {
           </Carousel.Item>
           {/*Item 2*/}
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="http://placekitten.com/800/400"
-              alt="Third slide"
-            />
+            <div className="d-block w-100 item-carousel item-2">
+              <div className="orange-filter"></div>
+            </div>
 
             <Carousel.Caption>
               <h3>Alarme</h3>
@@ -55,11 +50,9 @@ function Services() {
           </Carousel.Item>
           {/*Item 3*/}
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="http://placekitten.com/800/400"
-              alt="Third slide"
-            />
+            <div className="d-block w-100 item-carousel item-3">
+              <div className="orange-filter"></div>
+            </div>
 
             <Carousel.Caption>
               <h3>électricité</h3>
@@ -70,11 +63,10 @@ function Services() {
           </Carousel.Item>
           {/*Item 4*/}
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="http://placekitten.com/800/400"
-              alt="Third slide"
-            />
+            <div className="d-block w-100 item-carousel item-4">
+              <div className="orange-filter"></div>
+            </div>
+
             <Carousel.Caption>
               <h3>solution connectée</h3>
               <p>
@@ -118,6 +110,7 @@ function Services() {
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid quos odit quo debitis dolore, eos beatae a eligendi aut? Fugiat possimus et aperiam cupiditate reprehenderit? Ducimus atque magnam maiores?"
           />
         </button>
+        
       </Row>
     </div>
   );

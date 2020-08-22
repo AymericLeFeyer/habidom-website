@@ -60,7 +60,7 @@ function Drawer(props) {
                     <ul className="navbar-nav mr-auto">
                       <li className="nav-item item">
                       {/*eslint-disable-next-line*/}
-                        <AnchorLink className="nav-link" href="#about" onClick={props.setDisplayAbout}>
+                        <AnchorLink className="nav-link" href="#about" onClick={function(event){props.setDisplayAbout(); goTop()}}>
                           <p className="item">à propos</p>
                         </AnchorLink>
                       </li>
