@@ -10,4 +10,7 @@
 
 .display {
     margin-top: 0vh;
+    font-size: 0%;
+    transition-duration: 0.3s;
+
 }

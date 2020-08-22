@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 // Style
 import "../style/Appbar.css";
@@ -20,7 +21,8 @@ function Drawer(props) {
           <nav className={`navbar navbar-expand-lg navbar-light w-100 appbar${props.scroll ? ' appbar-small' : ''}`}>
             {/* Logo */}
             <Col xs={2}>
-              <img src={props.scroll ? LogoTitle : Logo} alt="Logo Habidom" className={`logo${props.scroll ? ' logo-small' : ''}`} />
+            {/*eslint-disable-next-line*/}
+              <AnchorLink href="#top" onClick={goTop}> <img src={props.scroll ? LogoTitle : Logo} alt="Logo Habidom" className={`logo${props.scroll ? ' logo-small' : ''}`} /></AnchorLink>
             </Col>
 
             <Col>
@@ -58,14 +60,14 @@ function Drawer(props) {
                     <ul className="navbar-nav mr-auto">
                       <li className="nav-item item">
                       {/*eslint-disable-next-line*/}
-                        <a className="nav-link" href="#" onClick={props.setDisplayAbout}>
+                        <AnchorLink className="nav-link" href="#about" onClick={props.setDisplayAbout}>
                           <p className="item">à propos</p>
-                        </a>
+                        </AnchorLink>
                       </li>
                       <li className="nav-item item">
-                        <NavLink className="nav-link" to="/services">
+                        <AnchorLink className="nav-link" href="#services">
                           <p className="item">Services</p>
-                        </NavLink>
+                        </AnchorLink>
                       </li>
 
                       <li className="nav-item item">
@@ -122,6 +124,11 @@ function Drawer(props) {
       </Col>
     </div>
   );
+}
+
+function goTop() {
+  window.scrollTo(0,0)
+  
 }
 
 export default Drawer;

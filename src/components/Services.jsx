@@ -20,7 +20,7 @@ function Services() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
-    console.log(selectedIndex);
+
     setIndex(selectedIndex);
   };
   return (
