@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  font-family: 'Bebas';
+ 
+  
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: local('MyFont'), url(../res/BebasNeue-Regular.woff) format('woff');
+}
+
+.App-content {
+  margin-top: 200px;
+}

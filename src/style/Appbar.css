@@ -1,0 +1,73 @@
+/* AppBar */
+.appbar {
+    background-color: white;
+    height: 160px;
+}
+
+/* Left Side */
+.logo {
+    width: 40%;
+   
+}
+
+/* Center Side */
+.slogan {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    color: #ef8720;
+    margin-bottom: -20px;
+}
+
+.nav-item {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #13100d
+    
+}
+
+.nav-link {
+    color: #13100d;
+}
+
+.item {
+    color: #13100d;
+    transition-duration: 1s;
+}
+
+.item:hover {
+    color: #ef8720;
+    transition-duration: 0.3s;
+}
+
+.links {
+    height: 60px;
+    margin-top: 10px;
+}
+
+.slogan.row {
+    align-items: center;
+}
+
+/* Right Side */
+.contact_line {
+    text-align: right;
+    font-size: 20px;
+    color: #13100d
+
+
+}
+
+.contact_line a:hover {
+    color: #ef8720;
+    transition-duration: 0.3s;
+
+}
+
+.contact_line a {
+    color: #13100d;
+    transition-duration: 1s;
+
+}
+

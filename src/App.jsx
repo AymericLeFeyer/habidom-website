@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './res/logo_habidom_seul.png';
-import './App.css';
+import "./style/bootstrap.min.css";
+import './style/App.css'; 
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/js/src/collapse.js';
+
+
+
+// Components
+import Appbar from "./components/Appbar"
+
+
+import { BrowserRouter }  from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          La domotique au coeur de votre habitation
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Work in Progress
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Appbar />
+        <div className="App-content">
+        lorem*64
+        
+         
+
+         
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
