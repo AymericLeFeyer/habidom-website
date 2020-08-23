@@ -78,7 +78,7 @@ function App() {
             <About scroll={scrolledRef.current} display={displayAbout} />
           </div>
           <div id="services">
-            <Services about={displayAbout} />
+            <Services about={displayAbout} scroll={scrolledRef.current} />
           </div>
           <div id="contact">
             <Contact />

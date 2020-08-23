@@ -19,12 +19,12 @@
 
 
 .App-content {
-  margin-top: 10vh;
+  margin-top: 0vh;
   transition-duration: 0.3s;
 }
 
 .App-content-small {
-  margin-top: 7vh;
+  margin-top: 0vh;
   transition-duration: 0.3s;
 }
 

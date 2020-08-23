@@ -24,7 +24,8 @@ function Services(props) {
   };
   return (
     <div className="services">
-      <div className={`${props.about ? '' : 'myCarousel'}`}>
+      {/*If about is not clicked and scrolling, the class is "myCarouselscrolling", no margin-top set*/}
+      <div className={`${props.about ? '' : 'myCarousel'}${props.scroll ? 'scrolling' : ''}`}>
         {/*Carousel*/}
         <Carousel activeIndex={index} onSelect={handleSelect}>
           {/*Item 1*/}
