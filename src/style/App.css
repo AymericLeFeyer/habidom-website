@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: 'Bebas';
+  font-family: 'Roboto';
  
   
 }
@@ -19,12 +19,20 @@
 
 
 .App-content {
-  margin-top: 19vh;
+  margin-top: 10vh;
   transition-duration: 0.3s;
 }
 
 .App-content-small {
   margin-top: 7vh;
   transition-duration: 0.3s;
+}
+
+h2 {
+  color: #ef8720;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas';
 }
 

@@ -14,6 +14,7 @@ import Appbar from "./components/Appbar";
 import Services from "./components/Services";
 import About from "./components/About";
 import Map from "./components/Map";
+import Contact from "./components/Contact";
 
 import { BrowserRouter } from "react-router-dom";
 
@@ -78,6 +79,9 @@ function App() {
           </div>
           <div id="services">
             <Services />
+          </div>
+          <div id="contact">
+            <Contact />
           </div>
           <div id="map">
             <Map />

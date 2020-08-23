@@ -133,7 +133,7 @@ function Service(props) {
           </CSSTransition>
         </Card.Header>
         <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
+          <h3>{props.title}</h3>
           <Card.Text>{props.text}</Card.Text>
         </Card.Body>
       </Card>

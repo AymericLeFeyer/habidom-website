@@ -5,6 +5,7 @@ import '../style/About.css';
 function About(props) {
   return (
     <div className={`about${props.scroll ? ' about-small' : ''}${!props.display ? ' display' : ''}`}>
+      <h2>A propos</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repudiandae tempora vel quisquam tenetur totam! Atque error dolore fugiat velit consectetur, quas, quasi sapiente in explicabo quo eum veritatis distinctio.
       Quidem nulla atque officia ad quia fuga eius laudantium eos sunt temporibus iure accusamus dicta, nisi quod? Quos sint est harum natus labore temporibus, recusandae provident, aspernatur voluptas inventore veritatis!
       Vel in expedita praesentium exercitationem dignissimos facere nemo, provident doloremque hic deserunt saepe officia, ad, incidunt molestias minima ipsum laboriosam maiores laborum sit ducimus dolor dolorum corporis? Ducimus, quas eaque!
