@@ -14,6 +14,7 @@ import Appbar from "./components/Appbar";
 import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Project from "./components/Project";
 
 import { BrowserRouter } from "react-router-dom";
 
@@ -80,8 +81,11 @@ function App() {
           <div id="services">
             <Services about={displayAbout} scroll={scrolledRef.current} />
           </div>
-          <div id="contact">
+          <div>
             <Contact />
+          </div>
+          <div id="project">
+            <Project />
           </div>
           
         </div>

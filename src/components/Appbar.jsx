@@ -99,9 +99,9 @@ function Drawer(props) {
                         </AnchorLink>
                       </li>
                       <li className="nav-item item">
-                        <NavLink className="nav-link" to="/project">
+                        <AnchorLink className="nav-link" href="#project">
                           <p className="item">Votre Projet</p>
-                        </NavLink>
+                        </AnchorLink>
                       </li>
                     </ul>
                   </div>

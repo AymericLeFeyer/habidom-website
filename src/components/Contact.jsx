@@ -7,7 +7,7 @@ import "../style/Contact.css";
 
 function Contact () {
     return (
-        <div>
+        <div  id="contact">
             <h2>Nous contacter</h2>
             <div id="map">
             <Map />

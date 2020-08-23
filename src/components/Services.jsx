@@ -25,7 +25,11 @@ function Services(props) {
   return (
     <div className="services">
       {/*If about is not clicked and scrolling, the class is "myCarouselscrolling", no margin-top set*/}
-      <div className={`${props.about ? '' : 'myCarousel'}${props.scroll ? 'scrolling' : ''}`}>
+      <div
+        className={`${props.about ? "" : "myCarousel"}${
+          props.scroll ? "scrolling" : ""
+        }`}
+      >
         {/*Carousel*/}
         <Carousel activeIndex={index} onSelect={handleSelect}>
           {/*Item 1*/}
@@ -111,13 +115,7 @@ function Services(props) {
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid quos odit quo debitis dolore, eos beatae a eligendi aut? Fugiat possimus et aperiam cupiditate reprehenderit? Ducimus atque magnam maiores?"
           />
         </button>
-        
-        
       </Row>
-      
-
-      
-
     </div>
   );
 }
