@@ -26,6 +26,10 @@
  }
 
 /* Carousel */
+.myCarousel {
+   margin-top: 20vh;
+}
+
 .carousel-item {
     height: 60vh;
  }

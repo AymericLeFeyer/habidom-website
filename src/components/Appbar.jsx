@@ -4,7 +4,12 @@ import { NavLink } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt, faPhone, faHome } from "@fortawesome/free-solid-svg-icons";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import {
+  faFacebookF,
+  faTwitter,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 // Style
 import "../style/Appbar.css";
@@ -18,25 +23,36 @@ function Drawer(props) {
     <div className="container-fluid">
       <Col className="fixed-top navbar-expand-lg shadow-lg p-3 mb-5 bg-white rounded">
         <Row id="nav">
-          <nav className={`navbar navbar-expand-lg navbar-light w-100 appbar${props.scroll ? ' appbar-small' : ''}`}>
+          <nav
+            className={`navbar navbar-expand-lg navbar-light w-100 appbar${
+              props.scroll ? " appbar-small" : ""
+            }`}
+          >
             {/* Logo */}
             <Col xs={2}>
-            {/*eslint-disable-next-line*/}
-              <AnchorLink href="#top" onClick={goTop}> <img src={props.scroll ? LogoTitle : Logo} alt="Logo Habidom" className={`logo${props.scroll ? ' logo-small' : ''}`} /></AnchorLink>
+              {/*eslint-disable-next-line*/}
+              <a href="#to" onClick={goTop}>
+                {" "}
+                <img
+                  src={props.scroll ? LogoTitle : Logo}
+                  alt="Logo Habidom"
+                  className={`logo${props.scroll ? " logo-small" : ""}`}
+                />
+              </a>
             </Col>
 
             <Col>
               {/* First Row */}
-              {!props.scroll ?
-              <Row>
-                {/* Slogan */}
-                <h2 className="slogan">
-                  La domotique au coeur de votre habitation
-                </h2>
-              </Row>
-              :
-              <Row></Row>
-              }
+              {!props.scroll ? (
+                <Row>
+                  {/* Slogan */}
+                  <h2 className="slogan">
+                    La domotique au coeur de votre habitation
+                  </h2>
+                </Row>
+              ) : (
+                <Row></Row>
+              )}
               {/* Second Row */}
               <Row className="links">
                 <nav className="navbar navbar-expand-lg navbar-light d-md-flex d-block flex-row mx-md-auto mx-0">
@@ -59,8 +75,15 @@ function Drawer(props) {
                   >
                     <ul className="navbar-nav mr-auto">
                       <li className="nav-item item">
-                      {/*eslint-disable-next-line*/}
-                        <AnchorLink className="nav-link" href="#about" onClick={function(event){props.setDisplayAbout(); goTop()}}>
+                        {/*eslint-disable-next-line*/}
+                        <AnchorLink
+                          className="nav-link"
+                          href="#about"
+                          onClick={function (event) {
+                            props.setDisplayAbout();
+                            goTop();
+                          }}
+                        >
                           <p className="item">À propos</p>
                         </AnchorLink>
                       </li>
@@ -71,9 +94,9 @@ function Drawer(props) {
                       </li>
 
                       <li className="nav-item item">
-                        <NavLink className="nav-link" to="/contact">
+                        <AnchorLink className="nav-link" href="#contact">
                           <p className="item">Contact</p>
-                        </NavLink>
+                        </AnchorLink>
                       </li>
                       <li className="nav-item item">
                         <NavLink className="nav-link" to="/project">
@@ -87,38 +110,122 @@ function Drawer(props) {
             </Col>
 
             {/* Contact */}
-            {!props.scroll ?
+
             <Col className="contact" xs={2}>
-              <Row className="contact_line">
-                <div className="w-100">
-                  <a href="mailto:contact@habidom.fr">
-                    contact@habidom.fr <FontAwesomeIcon icon={faAt} />
-                  </a>
+              {!props.scroll ? (
+                <div>
+                  <Row className="contact_line">
+                    <div className="w-100">
+                      <a href="mailto:contact@habidom.fr">
+                        contact@habidom.fr <FontAwesomeIcon icon={faAt} />
+                      </a>
+                    </div>
+                  </Row>
+                  <Row className="contact_line">
+                    <div className="w-100">
+                      <a href="tel:0612345678">
+                        06 12 34 56 78 <FontAwesomeIcon icon={faPhone} />
+                      </a>
+                    </div>
+                  </Row>
+                  <Row className="contact_line">
+                    <div className="w-100">
+                      <a
+                        href="https://goo.gl/maps/qFb3Yf2jd8X5kPpp8"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        3 rue de l'alarme <FontAwesomeIcon icon={faHome} />{" "}
+                        <br /> 59190 Hazebrouck{" "}
+                      </a>
+                    </div>
+                  </Row>
                 </div>
-              </Row>
-              <Row className="contact_line">
-                <div className="w-100">
-                  <a href="tel:0612345678">
-                    06 12 34 56 78 <FontAwesomeIcon icon={faPhone} />
-                  </a>
-                </div>
-              </Row>
-              <Row className="contact_line">
-                <div className="w-100">
-                  <a
-                    href="https://goo.gl/maps/qFb3Yf2jd8X5kPpp8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    3 rue de l'alarme <FontAwesomeIcon icon={faHome} /> <br />{" "}
-                    59190 Hazebrouck{" "}
-                  </a>
-                </div>
-              </Row>
+              ) : (
+                <Col xs={2}></Col>
+              )}
+
+              {props.scroll ? (
+                <Row className="contact_line">
+                  <div className="w-100">
+                    <a href="mailto:contact@habidom.fr" className="brand-icon">
+                      <FontAwesomeIcon icon={faAt} />
+                    </a>
+                    •
+                    <a href="tel:0612345678" className="brand-icon">
+                      <FontAwesomeIcon icon={faPhone} />
+                    </a>
+                    •
+                    <a
+                      href="https://goo.gl/maps/qFb3Yf2jd8X5kPpp8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brand-icon"
+                    >
+                      <FontAwesomeIcon icon={faHome} />
+                    </a>
+                    •
+                    <a
+                      href="https://www.facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brand-icon"
+                    >
+                      <FontAwesomeIcon icon={faFacebookF} />
+                    </a>
+                    •
+                    <a
+                      href="https://www.twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brand-icon"
+                    >
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </a>
+                    •
+                    <a
+                      href="https://www.linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brand-icon"
+                    >
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                  </div>
+                </Row>
+              ) : (
+                <Row className="contact_line">
+                  <div className="w-100">
+                    <a
+                      href="https://www.facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brand-icon"
+                    >
+                      <FontAwesomeIcon icon={faFacebookF} />
+                    </a>
+                    •
+                    <a
+                      href="https://www.twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brand-icon"
+                    >
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </a>
+                    •
+                    <a
+                      href="https://www.linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brand-icon"
+                    >
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                  </div>
+                </Row>
+              )}
             </Col>
-            :
-            <Col xs={2}></Col>
-            }
           </nav>
         </Row>
       </Col>
@@ -127,8 +234,7 @@ function Drawer(props) {
 }
 
 function goTop() {
-  window.scrollTo(0,0)
-  
+  window.scrollTo(0, 0);
 }
 
 export default Drawer;

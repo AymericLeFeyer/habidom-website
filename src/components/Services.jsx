@@ -16,7 +16,7 @@ import { ORANGE } from "../utils/constants";
 // Style
 import "../style/Services.css";
 
-function Services() {
+function Services(props) {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -24,7 +24,7 @@ function Services() {
   };
   return (
     <div className="services">
-      <div className="carousel">
+      <div className={`${props.about ? '' : 'myCarousel'}`}>
         {/*Carousel*/}
         <Carousel activeIndex={index} onSelect={handleSelect}>
           {/*Item 1*/}

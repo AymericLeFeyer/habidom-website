@@ -5,14 +5,13 @@
 }
 
 .about-small {
-    visibility: collapse;
-    
+    margin-top: 16vh;  
     transition-duration: 0.3s;
 }
 
 .display {
     margin-top: 0vh;
-    font-size: 0%;
+    visibility: collapse;
     transition-duration: 0.3s;
 
 }
