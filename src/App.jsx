@@ -13,6 +13,7 @@ import "bootstrap/js/src/collapse.js";
 import Appbar from "./components/Appbar";
 import Services from "./components/Services";
 import About from "./components/About";
+import Map from "./components/Map";
 
 import { BrowserRouter } from "react-router-dom";
 
@@ -61,7 +62,7 @@ function App() {
   }
   return (
     <BrowserRouter>
-    <div id="top"></div>
+      <div id="top"></div>
       <div className="App">
         <Appbar
           scroll={scrolledRef.current}
@@ -72,10 +73,15 @@ function App() {
             scrolledRef.current ? " App-content-small" : ""
           }`}
         >
-          <div id="about"><About scroll={scrolledRef.current} display={displayAbout} /></div>
+          <div id="about">
+            <About scroll={scrolledRef.current} display={displayAbout} />
+          </div>
           <div id="services">
-          <Services /></div>
-          
+            <Services />
+          </div>
+          <div id="map">
+            <Map />
+          </div>
         </div>
       </div>
     </BrowserRouter>
