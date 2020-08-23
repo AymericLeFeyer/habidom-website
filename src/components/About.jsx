@@ -4,6 +4,7 @@ import '../style/About.css';
 
 function About(props) {
   return (
+    props.display ?
     <div className={`about${props.scroll ? ' about-small' : ''}${!props.display ? ' display' : ''}`}>
       <h2>A propos</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repudiandae tempora vel quisquam tenetur totam! Atque error dolore fugiat velit consectetur, quas, quasi sapiente in explicabo quo eum veritatis distinctio.
@@ -13,6 +14,8 @@ function About(props) {
       Molestias, quod! Veritatis aliquam, omnis ad voluptatum ea explicabo qui nesciunt perspiciatis adipisci quaerat dolorum corrupti reiciendis quis eveniet nemo eum odio fugit, quidem ut! Sunt fugiat quas voluptatum dolores.
       Obcaecati sint facere odio similique eum delectus quia quidem dolorem eaque voluptas accusantium eius, tenetur illo cumque, officiis ab quaerat, repellendus distinctio deleniti nostrum quos? Aut vero et expedita ducimus.</p>
     </div>
+    :
+    <div className={`about${props.scroll ? ' about-small' : ''}${!props.display ? ' display' : ''}`}></div>
   );
 }
 

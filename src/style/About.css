@@ -1,10 +1,12 @@
 .about {
-    margin-top: 27vh;
+    margin-top: 25vh;
+    visibility: visible;
     transition-duration: 0.3s;
 }
 
 .about-small {
-    margin-top: 16vh;
+    visibility: collapse;
+    
     transition-duration: 0.3s;
 }
 
