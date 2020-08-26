@@ -1,1 +1,0 @@
-export const ORANGE = "#ef8720";
