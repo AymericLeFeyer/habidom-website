@@ -2545,7 +2545,7 @@ background: -webkit-linear-gradient(left, #ef8720 0%, #efbb20 50%, #ef8720 100%)
     .single-features .features-title-icon .features-icon i {
       font-size: 88px;
       line-height: 70px;
-      color: #ef8720;
+      color: #000000;
       position: relative;
       z-index: 5; }
     .single-features .features-title-icon .features-icon .shape {
