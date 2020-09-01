@@ -522,7 +522,7 @@
                                 <div class="form-input mt-25">
                                     <label>Entreprise (facultatif)</label>
                                     <div class="input-items default">
-                                        <input type="email" name="email" placeholder="Habidom">
+                                        <input type="text" name="society" placeholder="Habidom">
                                         <i class="lni lni-users"></i>
                                     </div>
                                 </div> <!-- form input -->
@@ -540,7 +540,7 @@
                                 <div class="form-input mt-25">
                                     <label>Téléphone</label>
                                     <div class="input-items default">
-                                        <input type="email" name="email" placeholder="06 12 34 45 56">
+                                        <input type="tel" name="phone" placeholder="06 12 34 45 56" pattern="[0-9]{10}">
                                         <i class="lni lni-phone"></i>
                                     </div>
                                 </div> <!-- form input -->
@@ -549,7 +549,7 @@
                                 <div class="form-input mt-25">
                                     <label>Dites nous tout !</label>
                                     <div class="input-items default">
-                                        <textarea name="massage" placeholder="J'ai envie de domotiser ma maison ..."></textarea>
+                                        <textarea name="message" placeholder="J'ai envie de domotiser ma maison ..."></textarea>
                                         <i class="lni lni-pencil-alt"></i>
                                     </div>
                                 </div> <!-- form input -->
@@ -711,6 +711,9 @@
     <!--====== Scrolling Nav js ======-->
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/scrolling-nav.js"></script>
+
+     <!--====== SMTP js ======-->
+     <script src="assets/js/smtp.js"></script>
     
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
