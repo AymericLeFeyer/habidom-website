@@ -49,6 +49,7 @@ $(function() {
 							<li>Email : ${formData.mail}</li>
 							<li>Téléphone : ${formData.phone}</li>
 						</ul>
+						<hr>
             			<p>${formData.message}</p>
 						</br>`;
 

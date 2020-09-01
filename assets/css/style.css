@@ -3083,6 +3083,54 @@ background: -webkit-linear-gradient(left, #ef8720 0%, #efbb20 50%, #ef8720 100%)
       color: #fff; }
 
 /*===========================
+      19.PROJECT css 
+===========================*/
+.project-area {
+  background-color: #f4f6f7; }
+
+p.form-message.success, p.form-message.error {
+  font-size: 16px;
+  color: #333;
+  background: #ddd;
+  padding: 10px 15px;
+  margin-top: 15px;
+  margin-left: 15px; }
+  p.form-message.success.form-message.error, p.form-message.error.form-message.error {
+    color: #f00; }
+
+.project-info .single-project-info .project-info-icon i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 50%; }
+.project-info .single-project-info .project-info-content {
+  padding-left: 20px; }
+  .project-info .single-project-info .project-info-content .text {
+    color: #121212; }
+.project-info .single-project-info.project-color-1 .project-info-icon i {
+  background-color: #121212; }
+.project-info .single-project-info.project-color-2 .project-info-icon i {
+  background-color: #fc3832; }
+.project-info .single-project-info.project-color-3 .project-info-icon i {
+  background-color: #005ad5; }
+
+.project-wrapper .project-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000; }
+  @media (max-width: 767px) {
+    .project-wrapper .project-title {
+      font-size: 26px; } }
+  .project-wrapper .project-title i {
+    color: #121212;
+    margin-right: 8px; }
+  .project-wrapper .project-title span {
+    font-weight: 400; }
+
+/*===========================
       19.CONTACT css 
 ===========================*/
 .contact-area {
