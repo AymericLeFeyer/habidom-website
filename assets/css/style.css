@@ -2901,7 +2901,7 @@ background: -webkit-linear-gradient(left, #ef8720 0%, #efbb20 50%, #ef8720 100%)
   padding: 40px 30px 50px;
   border-radius: 50px; }
   .single-testimonial .testimonial-text .text {
-    font-size: 42px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 36px;
     color: #121212;
@@ -2919,8 +2919,9 @@ background: -webkit-linear-gradient(left, #ef8720 0%, #efbb20 50%, #ef8720 100%)
     .single-testimonial .testimonial-author .author-info .author-name {
       padding-left: 30px; }
       .single-testimonial .testimonial-author .author-info .author-name .name {
-        font-size: 16px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 100;
+
         color: #121212; }
       .single-testimonial .testimonial-author .author-info .author-name .sub-title {
         font-size: 14px;
