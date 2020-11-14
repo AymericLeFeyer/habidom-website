@@ -12,7 +12,7 @@
         if ( empty($name) OR empty($subject) OR empty($lname) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
-            echo "Please complete the form and try again.";
+            echo "Merci de compléter le formulaire en entier avant de recommencer.";
             exit;
         }
 
