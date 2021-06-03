@@ -54,12 +54,13 @@ $(function () {
 						</br>`;
 
       Email.send({
-        SecureToken: "9a609ade-03ef-4ebb-b6f3-f7c96e7de52b",
+        SecureToken: "132c5e51-d193-454e-9f87-c16f8d691834",
         To: [formData.mail, "contact@habidom.fr"],
         From: "noreply@habidom.fr",
         Subject: "Message envoyé depuis Habidom.fr",
         Body: msg,
       }).then((message) => {
+        console.log(message);
         if (message === "OK") {
           $(this).trigger("reset");
           $(formMessages).removeClass("error");
@@ -74,7 +75,7 @@ $(function () {
             "Un problème est survenu. Veuillez réessayer ultérieurement. Si le problème persiste, envoyer un mail directement à contact@habidom.fr ou par téléphone"
           );
         }
-        $("form button").html(btnContent);
+        //$("form button").html(btnContent);
       });
     }
   });
