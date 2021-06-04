@@ -54,9 +54,9 @@ $(function () {
 						</br>`;
 
       Email.send({
-        SecureToken: "132c5e51-d193-454e-9f87-c16f8d691834",
+        SecureToken: "f6ea82ac-2336-4ab8-bd96-bd72c667f19c",
         To: [formData.mail, "contact@habidom.fr"],
-        From: "noreply@habidom.fr",
+        From: "contact@habidom.fr",
         Subject: "Message envoyé depuis Habidom.fr",
         Body: msg,
       }).then((message) => {
